@@ -1,4 +1,8 @@
-﻿internal class Program
+﻿using System;
+using Colecoes.Helper;
+
+namespace Colecoes;
+internal class Program
 {
   private static void Main(string[] args)
   {
@@ -23,7 +27,7 @@
 
     //array multidimensional
 
-    int[,] matriz = new int[4, 2]
+    /* int[,] matriz = new int[4, 2]
     {
         {8,8},
         {9,11},
@@ -37,8 +41,23 @@
       {
         System.Console.WriteLine(matriz[i,j]);
       }
-    }
+    } */
 
+    OperacoesArray op = new OperacoesArray();
+
+    int[] array = new int[5]{10,20,80,9,1};
+
+    System.Console.WriteLine("array original");
+    op.ImprimirArray(array);
+
+    //metodo OrdenarBubbleSort
+    //op.OrdenarBubbleSort(ref array);
+
+    //metodo Ordenar usando a classe Array
+    op.Ordenar(ref array);
+
+    System.Console.WriteLine("array ordenado");
+    op.ImprimirArray(array);
     
   }
 }
