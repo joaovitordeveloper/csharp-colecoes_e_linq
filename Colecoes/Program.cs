@@ -48,18 +48,37 @@ internal class Program
     int[] array = new int[5]{10,20,80,9,1};
     int[] arrayCopia = new int[10];
 
-    int valorProcurado = 10;
+    string[] arrayString = op.ConverterParaArrayString(array);
 
-    int valorAchado = op.ObterValor(array, valorProcurado);
+    // int valorProcurado = 1;
 
-    if (valorAchado > 0)
-    {
-      System.Console.WriteLine("Encontrei o valor: {0}", valorProcurado);
-    }
-    else
-    {
-      System.Console.WriteLine("Não encontrei o valor: {0}", valorProcurado);
-    }
+    // System.Console.WriteLine($"Capacidade atal do array: {array.Length}");
+
+    // op.RedimensionarArray(ref array, array.Length * 2);
+
+    // System.Console.WriteLine($"Capacidade atal do array após redimensionar: {array.Length}");
+
+    // int indice = op.ObterIndice(array, valorProcurado);
+
+    // if (indice > -1)
+    // {
+    //   System.Console.WriteLine("O indice do elemento {0} é: {1}", valorProcurado, indice);
+    // }
+    // else
+    // {
+    //   System.Console.WriteLine($"O indice não foi encontrado");
+    // }
+
+    // int valorAchado = op.ObterValor(array, valorProcurado);
+
+    // if (valorAchado > 0)
+    // {
+    //   System.Console.WriteLine("Encontrei o valor: {0}", valorProcurado);
+    // }
+    // else
+    // {
+    //   System.Console.WriteLine("Não encontrei o valor: {0}", valorProcurado);
+    // }
 
     // bool todosMaiorQue = op.todosMaiorQue(array, valorProcurado);
 
