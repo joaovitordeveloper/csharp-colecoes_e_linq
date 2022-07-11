@@ -46,18 +46,58 @@ internal class Program
     OperacoesArray op = new OperacoesArray();
 
     int[] array = new int[5]{10,20,80,9,1};
+    int[] arrayCopia = new int[10];
 
-    System.Console.WriteLine("array original");
-    op.ImprimirArray(array);
+    int valorProcurado = 10;
+
+    int valorAchado = op.ObterValor(array, valorProcurado);
+
+    if (valorAchado > 0)
+    {
+      System.Console.WriteLine("Encontrei o valor: {0}", valorProcurado);
+    }
+    else
+    {
+      System.Console.WriteLine("Não encontrei o valor: {0}", valorProcurado);
+    }
+
+    // bool todosMaiorQue = op.todosMaiorQue(array, valorProcurado);
+
+    // if(todosMaiorQue)
+    // {
+    //   System.Console.WriteLine("Todos os valores são maior que: {0}", valorProcurado);
+    // }
+    // else
+    // {
+    //   System.Console.WriteLine("Nem todos os vlores são maior que: {0}", valorProcurado);
+    // }
+
+    // bool Existe = op.Existe(array, valorProcurado);
+
+    // if(Existe)
+    // {
+    //   System.Console.WriteLine("Valor encontrado: {0}", valorProcurado);
+    // }
+    // else
+    // {
+    //   System.Console.WriteLine("Valor não encontrado: {0}", valorProcurado);
+    // }
+
+    /* System.Console.WriteLine("array original");
+    op.ImprimirArray(array); */
 
     //metodo OrdenarBubbleSort
     //op.OrdenarBubbleSort(ref array);
 
     //metodo Ordenar usando a classe Array
-    op.Ordenar(ref array);
+    //op.Ordenar(ref array);
 
-    System.Console.WriteLine("array ordenado");
-    op.ImprimirArray(array);
-    
+    // System.Console.WriteLine("array antes da copia");
+    // op.ImprimirArray(arrayCopia);
+
+    // op.Copiar(ref array, ref arrayCopia);
+
+    // System.Console.WriteLine("array ddepois de ser copiado");
+    // op.ImprimirArray(arrayCopia);
   }
 }
