@@ -8,7 +8,7 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {}
+    "C:\\Users\\RBM_Mobile\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -16,18 +16,15 @@
       "projectUniqueName": "C:\\xampp\\htdocs\\csharp-colecoes_e_linq\\colecoes\\Colecoes.csproj",
       "projectName": "Colecoes",
       "projectPath": "C:\\xampp\\htdocs\\csharp-colecoes_e_linq\\colecoes\\Colecoes.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\RBM_Mobile\\.nuget\\packages\\",
       "outputPath": "C:\\xampp\\htdocs\\csharp-colecoes_e_linq\\colecoes\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\RBM_Mobile\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
-      "sources": {
-        "https://api.nuget.org/v3/index.json": {}
-      },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",

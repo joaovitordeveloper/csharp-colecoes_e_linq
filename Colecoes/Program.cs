@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Colecoes.Helper;
 
 namespace Colecoes;
@@ -6,6 +7,46 @@ internal class Program
 {
   private static void Main(string[] args)
   {
+
+    //filas
+
+    Queue<string> fila =new Queue<string>();
+
+    fila.Enqueue("João");
+    fila.Enqueue("Vitor");
+    fila.Enqueue("Teste");
+
+    System.Console.WriteLine($"Pessoas na fila: {fila.Count}");
+
+    while (fila.Count > 0)
+    {
+      System.Console.WriteLine($"Vez de: {fila.Peek()}");
+      System.Console.WriteLine($"{fila.Dequeue()} Atendido");
+    }
+
+    System.Console.WriteLine($"Pessoas na fila: {fila.Count}");
+
+
+    //listas
+    // OperacoesLista opLista = new  OperacoesLista();
+    // List<string> estados = new List<string>{"SP", "MG", "BA"};
+
+    // string[] estadoArray = new string[2]{"SC", "MT"};
+
+    // opLista.ImprimirListaString(estados);
+
+    // // System.Console.WriteLine("Removendo o elemento");
+
+    // // estados.Remove("MG");
+
+    // //estados.AddRange(estadoArray);
+
+    // estados.Insert(1, "RJ");
+
+    // opLista.ImprimirListaString(estados);
+
+    
+
     /* int[] arrayInteiros = new int[3];
 
     arrayInteiros[0] = 10;
@@ -43,12 +84,12 @@ internal class Program
       }
     } */
 
-    OperacoesArray op = new OperacoesArray();
+    // OperacoesArray op = new OperacoesArray();
 
-    int[] array = new int[5]{10,20,80,9,1};
-    int[] arrayCopia = new int[10];
+    // int[] array = new int[5]{10,20,80,9,1};
+    // int[] arrayCopia = new int[10];
 
-    string[] arrayString = op.ConverterParaArrayString(array);
+    // string[] arrayString = op.ConverterParaArrayString(array);
 
     // int valorProcurado = 1;
 
